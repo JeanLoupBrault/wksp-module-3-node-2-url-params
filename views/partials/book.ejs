@@ -1,0 +1,17 @@
+<li>
+    <div class='book'>
+        <p class='book__rank'>
+            
+            <span class='book__rank--num'>#<%= books.id %></span>
+            <span class='book__rank--stream-count'>type: <%= books.type %><span>
+                
+        </p>
+        <div class='book__info'>
+            <p class='book__info--title'>title: <%= books.title %></p>
+            <p class='book__info--author'>by <%= books.author %></p>
+            <a href="/allBooks/book/<%- books.id %>"></a>
+            <p class='book__info--pub-date'>book cover page: <img src="<%- books.imgUrl %>" /></p>
+            <span class='book__rank--stream-count'>description: <%= books.description %><span></span>
+        </div>
+    </div>
+</li>

@@ -1,0 +1,13 @@
+<li>
+    <div class='song'>
+        <p class='song__rank'>
+            <span class='song__rank--num'>#<%= song.rank %></span>
+            <span class='song__rank--stream-count'>(<%= song.streams %> streams)<span>
+        </p>
+        <div class='song__info'>
+            <p class='song__info--title'><%= song.title %></p>
+            <p class='song__info--artist'>by <%= song.artist %></p>
+            <p class='song__info--pub-date'>publication date: <%= song.publicationDate %></p>
+        </div>
+    </div>
+</li>

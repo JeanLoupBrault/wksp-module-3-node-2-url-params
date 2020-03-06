@@ -83,6 +83,58 @@ codeblock {
   margin: 12px 32px 6px 0;
   padding: 12px 14px; }
 
+.song {
+  border-bottom: 1px solid #808080;
+  display: flex;
+  padding: 6px 0; }
+  .song__rank {
+    flex: 0 0 100px;
+    display: flex;
+    flex-direction: column; }
+    .song__rank--num {
+      font-size: 40px;
+      font-weight: 700; }
+    .song__rank--stream-count {
+      font-size: 10px;
+      margin-top: -12px; }
+  .song__info {
+    flex: 1 0 auto; }
+    .song__info--title {
+      font-size: 18px;
+      font-weight: 700; }
+    .song__info--artist {
+      font-style: italic; }
+    .song__info--pub-date {
+      font-size: 12px;
+      text-align: right; }
+
+.song-page {
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  box-shadow: 3px 4px 23px 0px #ccc;
+  height: 400px;
+  margin: 48px auto;
+  padding: 24px;
+  width: 400px; }
+  .song-page--title {
+    border-bottom: 1px solid #ccc;
+    font-size: 24px;
+    margin-bottom: 8px;
+    padding-bottom: 16px;
+    text-align: center; }
+  .song-page--artist {
+    text-align: center; }
+  .song-page--stream-count {
+    flex: 1 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 180px;
+    font-weight: 700;
+    color: #ccc; }
+
 body {
   background: #fafafa;
   display: flex;

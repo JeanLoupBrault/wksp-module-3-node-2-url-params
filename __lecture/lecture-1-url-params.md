@@ -26,6 +26,13 @@ app.get('/question10', q10)
 
 ```js
 // ...
+/question/6
+app.get('/question/:number', (req, res) => {
+    const number = req.params.number;
+    console.log(number); //6
+
+    exercisesP1[`q${number}`]();
+});
 
 ```
 

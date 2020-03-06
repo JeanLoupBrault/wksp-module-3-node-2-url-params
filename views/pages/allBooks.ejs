@@ -1,0 +1,10 @@
+<%- include( '../partials/header', { title: title }) %>
+<div class="main">
+  <ol>
+    <% books.forEach(books => { %>
+    <a href="/books/<%- books.id %>">
+      <%- include('../partials/book', { books: books }) %> <% }); %>
+    </a>
+  </ol>
+</div>
+<%- include( '../partials/footer') %>
